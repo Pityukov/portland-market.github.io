@@ -1,0 +1,252 @@
+.page__element {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+.body {
+	width: 1400px;
+}
+.header {
+	display: grid;
+	width: 1400px;
+	height: 90px;
+	grid-template-columns: 116px [logo-start] 92px [logo-end] 211px [menu-info-start] auto [menu-info-end] 180px [button-cart-start] auto [button-cart-end] 29px [button-authorization-start] 85px [button-authorization-end] 115px;
+	align-items: center;
+	background: #fff;
+	border-bottom: 1px solid;
+	border-bottom-color: #f0f2f7;
+}
+.header__logo {
+	grid-column: logo-start / logo-end;
+}
+.header__menu-info {
+	grid-column: menu-info-start / menu-info-end;
+}
+.header__button-cart {
+	grid-column: button-cart-start / button-cart-end;
+}
+.header__button-authorization {
+	grid-column: button-authorization-start / button-authorization-end;
+}
+.menu-info {
+	display: grid;
+	width: 483px;
+	grid-template-columns: repeat(5, auto);
+	justify-content: space-between;
+}
+.menu-info__link {
+	text-align: left;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 400;
+	color: #343e5b;
+	text-decoration: none;
+}
+.menu-info__link-1 {
+	grid-column: 1;
+}
+.menu-info__link-2 {
+	grid-column: 2;
+}
+.menu-info__link-3 {
+	grid-column: 3;
+}
+.menu-info__link-4 {
+	grid-column: 4;
+}
+.menu-info__link-5 {
+	grid-column: 5;
+}
+.button-cart {
+	display: grid;
+	width: 89px;
+	grid-template-columns: repeat(3, auto);
+	justify-content: space-between;
+	align-items: center;
+	font-family: Montserrat;
+	font-size: 11px;
+	font-weight: 400;
+	color: #343e5b;
+	text-decoration: none;
+}
+.button-cart__icon-cart {
+	grid-column: 1;
+}
+.button-cart__button-value {
+	grid-column: 2;
+}
+.button-cart__number-purchases {
+	grid-column: 3;
+	display: grid;
+	align-items: center;
+	justify-items: center;
+	width: 24px;
+	height: 24px;
+	border-radius: 12px;
+	background-color: #e3e8f0;
+}
+.button-authorization {
+	display: grid;
+	width: 85px;
+	height: 32px;
+	align-items: center;
+	justify-items: center;
+	border: 2px solid;
+	border-color:  #e3e8f0;
+	border-radius: 16px;
+	font-family: Montserrat;
+	font-size: 11px;
+	font-weight: 400;
+	color: #343e5b;
+	text-decoration: none;
+}
+.navigation-bar {
+	display: grid;
+	width: 1400px;
+	height: 56px;
+	grid-template-columns: 115px [menu-products-start] auto [menu-products-end] 390px [support-start] auto [support-end] 32px [search-form-start] auto [search-form-end] 115px;
+	align-items: center;
+}
+.navigation-bar__menu-products {
+	grid-column: menu-products-start / menu-products-end;
+}
+.navigation-bar__link-support {
+	grid-column: support-start / support-end;
+}
+.navigation-bar__search-form {
+	grid-column: search-form-start / search-form-end;
+}
+.menu-products {
+	display: grid;
+	width: 486px;
+	height: 9px;
+	grid-template-columns: repeat(5, auto);
+	justify-content: space-between;
+}
+.menu-products__link {
+	font-family: Montserrat;
+	font-size: 11px;
+	font-weight: 400;
+	text-decoration: none;
+	color: #b9bed1;
+}
+.menu-products__link_dark {
+	color:  #343e5b;
+}
+.menu-products__link-1 {
+	grid-column: 1;
+}
+.menu-products__link-2 {
+	grid-column: 2;
+}
+.menu-products__link-3 {
+	grid-column: 3;
+}
+.menu-products__link-4 {
+	grid-column: 4;
+}
+.menu-products__link-5 {
+	grid-column: 5;
+}
+.link-support {
+	width: 60px;
+	height: 9px;
+	font-family: Montserrat;
+	font-size: 11px;
+	font-weight: 400;
+	color:  #b9bed1;
+	text-decoration: none;
+}
+.search-form {
+	display: grid;
+	width: 202px;
+	height: 55px;
+}	
+.search-form__input {
+	border-top: 0;
+	border-bottom: 0;
+	padding-left: 47px;
+	border-left: 1px solid;
+	border-right: 1px solid;
+	border-left-color: #f0f2f7;
+	border-right-color: #f0f2f7;
+	background-image: url("/image/icons/search-icon.svg");
+	background-repeat: no-repeat;
+	background-position: 21px center;
+	line-height: 24px;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #a1a8be;
+}
+.search-form__input::placeholder {
+	line-height: 24px;
+	font-family: Montserrat;
+	font-size: 14px;
+	font-weight: 400;
+	color: #a1a8be;
+}
+.search-form__input:focus {
+	background-image: none;
+}
+.search-form__input:focus::placeholder {
+	color: transparent;
+}
+.presentation {
+	display: grid;
+	width: 1400px;
+	height: 500px;
+	grid-template-columns:  213px [presentation-text-start presentation-button-buy-start] auto [presentation-button-buy-end] auto [presentation-text-end] 117px [presentation-image-start] auto [presentation-image-end] 310px;
+	grid-template-rows: [presentation-image-start] 103px[presentation-title-start] minmax(86px, auto) [presentation-title-end] minmax(auto, 34px) [presentation-description-start] minmax(65px, auto) [presentation-description-end]  minmax(auto, 64px) [presentation-button-buy-start] auto [presentation-button-buy-end] 106px [presentation-image-end];
+	background: #1c1e23;
+}
+.presentation__title {
+	grid-column: presentation-text-start / presentation-text-end;
+	grid-row: presentation-title-start / presentation-title-end;
+}
+.presentation__description {
+	grid-column: presentation-text-start / presentation-text-end;
+	grid-row: presentation-description-start / presentation-description-end;
+	line-height: 24px;
+	font-family: "Crimson Text";
+	font-size: 16px;
+	font-weight: 400;
+	color:  #fff;
+}
+.presentation__button-buy{
+	grid-column: presentation-button-buy-start / presentation-button-buy-end;
+	grid-row: presentation-button-buy-start / presentation-button-buy-end;
+}
+.presentation__show {
+	grid-column: presentation-image-start / presentation-image-end;
+	grid-row: presentation-image-start / presentation-image-end;
+	overflow: hidden;
+}
+.presentation__image {
+	margin-top: -68px;
+}
+.product-title {
+	font-family: Montserrat;
+	font-size: 42px;
+	font-weight: 900;
+	color:  #fff;
+}
+.button-buy {
+	display: grid;
+	width: 165px;
+	height: 42px;
+	align-items: center;
+	justify-items: center;
+	border: none;
+	border-radius: 21px;
+	background: #2754eb;
+	font-family: Montserrat;
+	font-size: 11px;
+	font-weight: 400;
+	color:  #fff;
+}
+
+.button-buy:hover {
+	box-shadow: 10px 17px 40px 0px rgba(168, 173, 187, 0.62);
+}
